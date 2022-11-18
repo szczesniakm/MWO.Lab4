@@ -74,5 +74,5 @@ jobs:
         id: deploy-to-webapp
         uses: azure/webapps-deploy@v2
         with:
-          app-name: 'mwo-lab4-dev-api'
+          app-name: 'mwo-lab4-dev'
           publish-profile: ${{ secrets.PUBLISH_PROFILE_DEV }}
