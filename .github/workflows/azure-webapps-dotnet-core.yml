@@ -49,7 +49,7 @@ jobs:
         run: dotnet build --configuration Release
 
       - name: dotnet publish
-        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/api
+        run: dotnet publish -c Release -o ${{env.DOTNET_ROOT}}/api -p:Version=1.0.${{ github.run_id }}
 
       - name: Upload artifact for deployment job
         uses: actions/upload-artifact@v3
