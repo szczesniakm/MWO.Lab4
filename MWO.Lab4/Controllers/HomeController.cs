@@ -10,7 +10,7 @@ namespace MWO.Lab4.Controllers
         [HttpGet("version")]
         public IActionResult Index()
         {
-            var version = Assembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
+            var version = dsadsaAssembly.GetEntryAssembly()?.GetCustomAttribute<AssemblyInformationalVersionAttribute>()?.InformationalVersion;
             return Ok(version);
         }
     }
